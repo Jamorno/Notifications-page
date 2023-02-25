@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#page {
+    background-color: hsl(210, 60%, 98%);
+    padding: 4rem 17rem;
+}
+
+.box {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+@media (max-width:768px) {
+    #page {
+        padding: 0rem 0rem;
+    }
+
+    .box {
+        background-color: white;
+        border-radius: none;
+        padding: 1rem 1rem;
+    }
+}
+
+/* header */
+
+header {
+    padding-bottom: 2rem;
+}
+
+.notification {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.noti-count {
+    color: white;
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 0.5rem;
+    padding: 0rem 0.8rem;
+}
+
+.mark-all {
+    font-weight: 400;
+    color: hsl(219, 14%, 63%);
+    align-self: center;
+}
+
+.mark-all:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .notification {
+        font-size: 1.1rem;
+    }
+
+    .mark-all {
+        font-size: 0.8rem;
+    }
+}
+
+/* massage box */
+
+.unread {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 1rem;
+}
+
+.massage-box {
+    padding: 1rem 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.avatar-images {
+    width: 4rem;
+    display: block;
+    margin: auto;
+}
+
+.content {
+    line-height: 1rem;
+    /* align-self: center; */
+}
+
+.name {
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.text {
+    color: hsl(219, 14%, 63%);
+    font-weight: 500;
+}
+
+.link-text {
+    color: hsl(219, 14%, 63%);
+    cursor: pointer;
+}
+
+.link-text:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.time-text {
+    color: hsl(219, 14%, 63%);
+    font-size: 1.2rem;
+}
+
+.red-dot {
+    color: hsl(1, 90%, 64%);
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 100%;
+    width: 0.7rem;
+    height: 0.7rem;
+    display: inline-block;
+}
+
+.private-message {
+    font-size: 1.2rem;
+    color: hsl(219, 14%, 63%);
+    border-style: solid;
+    border-color: hsl(211, 68%, 94%);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    line-height: 1.5rem;
+    transition: 0.5s;
+}
+
+.private-message:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+
+.massage-box-comment {
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+.commented-picture {
+    width: 3.5rem;
+}
+
+@media (max-width:768px) {
+    .massage-box {
+        padding: 1rem 1rem 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .content {
+        line-height: 0.4rem;
+    }
+    .avatar-images {
+        width: 2.5rem;
+        margin-right: 1rem;
+    }
+    .name {
+        font-size: 0.9rem;
+    }
+    .time-text {
+        font-size: 0.9rem;
+    }
+    .red-dot {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .private-message {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+    }
+    .commented-picture {
+        width: 2.5rem;
+    }
+}

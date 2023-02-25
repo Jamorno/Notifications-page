@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- css -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+
+<body>
+
+  <main id="page">
+
+    <section class="box">
+
+      <!-- header -->
+      <header class="row">
+        <div class="col-lg-6 col-6 notification">
+          Notifications
+          <span class="noti-count">3</span>
+        </div>
+
+        <div class="col-lg-6 col-6 text-end mark-all">
+          Mark all as read
+        </div>
+      </header>
+
+      <!-- massage box Mark Webber-->
+      <div class="row g-0 massage-box unread">
+        <div class="col-lg-2 col-2">
+          <img class="avatar-images" src="assets/images/avatar-mark-webber.webp" alt="avatar-images">
+        </div>
+        <div class="col-lg-10 col-10 content">
+          <h3 class="name">Mark Webber
+            <span class="text">reacted to your recent post</span>
+            <i class="link-text">My first tournament today!</i>
+            <i class="red-dot"></i>
+          </h3>
+          <p class="time-text">1m ago</p>
+        </div>
+      </div>
+
+      <!-- massage box Angela Gray-->
+      <div class="row g-0 massage-box unread">
+        <div class="col-lg-2 col-2">
+          <img class="avatar-images" src="assets/images/avatar-angela-gray.webp" alt="avatar-images">
+        </div>
+        <div class="col-lg-10 col-10 content">
+          <h3 class="name">Angela Gra
+            <span class="text">followed you</span>
+            <i class="red-dot"></i>
+          </h3>
+          <p class="time-text">5m ago</p>
+        </div>
+      </div>
+
+      <!-- massage box Jacob Thompson-->
+      <div class="row g-0 massage-box unread">
+        <div class="col-lg-2 col-2">
+          <img class="avatar-images" src="assets/images/avatar-jacob-thompson.webp" alt="avatar-images">
+        </div>
+        <div class="col-lg-10 col-10 content">
+          <h3 class="name">Jacob Thompson
+            <span class="text">has joined your group</span>
+            <i class="link-text">Chess Club</i>
+            <i class="red-dot"></i>
+          </h3>
+          <p class="time-text">1 day ago</p>
+        </div>
+      </div>
+
+      <!-- massage box Rizky Hasanuddin private message-->
+      <div class="row g-0 massage-box">
+        <div class="col-lg-2 col-2">
+          <img class="avatar-images" src="assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-images">
+        </div>
+        <div class="col-lg-10 col-10 content">
+          <h3 class="name">Rizky Hasanuddin
+            <span class="text">sent you a private message</span>
+          </h3>
+          <p class="time-text">5 day ago</p>
+          <p class="private-message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </p>
+        </div>
+      </div>
+
+      <!-- massage box Kimberly Smith commented-->
+      <div class="row g-0 massage-box">
+        <div class="col-lg-2 col-2">
+          <img class="avatar-images" src="assets/images/avatar-kimberly-smith.webp" alt="avatar-images">
+        </div>
+        <div class="col-lg-8 col-8 content">
+          <h3 class="name">Kimberly Smith
+            <span class="text">commented on your picture</span>
+          </h3>
+          <p class="time-text">1 week ago</p>
+        </div>
+        <div class="col-lg-2 col-2 text-end">
+          <img class="commented-picture" src="assets/images/image-chess.webp"
+          alt="commented-picture">
+        </div>
+        
+      </div>
+
+      <!-- massage box Nathan Peterson-->
+      <div class="row g-0 massage-box">
+        <div class="col-lg-2 col-2">
+          <img class="avatar-images" src="assets/images/avatar-nathan-peterson.webp" alt="avatar-images">
+        </div>
+        <div class="col-lg-10 col-10 content">
+          <h3 class="name">Nathan Peterson
+            <span class="text">reacted to your recent post</span>
+            <i class="link-text">5 end-game strategies to increase your win rate</i>
+          </h3>
+          <p class="time-text">2 weeks ago</p>
+        </div>
+      </div>
+
+      <!-- massage box Anna Kim-->
+      <div class="row g-0 massage-box">
+        <div class="col-lg-2 col-2">
+          <img class="avatar-images" src="assets/images/avatar-anna-kim.webp" alt="avatar-images">
+        </div>
+        <div class="col-lg-10 col-10 content">
+          <h3 class="name">Anna Kim
+            <span class="text">left the group</span>
+            <i class="link-text">Chess Club</i>
+          </h3>
+          <p class="time-text">2 weeks ago</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
